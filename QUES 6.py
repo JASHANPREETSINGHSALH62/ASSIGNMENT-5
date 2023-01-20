@@ -1,0 +1,11 @@
+n=int(input("ENTER THE UPPER RANGE: "))
+m=int(input("ENTER THE LOWER RANGE: "))
+print("PRIME NUMBERS ARE: ")
+for i in range(n,m+1):
+    is_prime=True
+    for j in range(2,int((i**0.5)+1)):
+        if i%j==0:
+            is_prime=False
+            break
+    if is_prime:
+        print(i,end=",")    
